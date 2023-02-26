@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <input id="name" />
+        <br>
+        <button onClick="save()" type="button">save</button>
+        <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+        <script>
+
+     
+    
+ 
+  const firebaseConfig = {
+    apiKey: "AIzaSyBD8BzE1fM1ECzgpC4WUeWRluq1JwFWQdQ",
+    authDomain: "harshini-81cd4.firebaseapp.com",
+    databaseURL: "https://harshini-81cd4-default-rtdb.firebaseio.com",
+    projectId: "harshini-81cd4",
+    storageBucket: "harshini-81cd4.appspot.com",
+    messagingSenderId: "1021164700769",
+    appId: "1:1021164700769:web:54d9b0aa7e09ec63e75620",
+    measurementId: "G-QP6H35BE7P"
+  };
+ 
+  firebase.initializeApp(firebaseConfig);
+            function save(){
+             
+                firebase.database().ref("user").set({
+        
+                name1: document.getElementById("name").value
+     });
+    
+    //  const dbRef = firebase.database().ref();
+    //  dbRef.child("user").get().then((snapshot) => {
+    //             snapshot.forEach(child => {
+                    
+    //      if (snapshot.exists()) {
+              
+    //        document.write("Name:"+snapshot.child("name").val()+"<br>");
+        
+    //      } else {
+    //     console.log("No data available");
+    //     }
+    // });
+    //     }).catch((error) => {
+    //      console.error(error);
+    //    });
+      
+        }
+
+        </script>
+    </body>
+</html>
