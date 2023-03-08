@@ -103,7 +103,7 @@ a{
      color:rgb(255, 255, 255);
 }
 footer{
-    position: absolute;
+   
   right: 0;
   bottom: 0;
   left: 0;
@@ -225,20 +225,17 @@ a:hover{
           };
           // Initialize Firebase
           firebase.initializeApp(firebaseConfig);
-//           const dbef=firebase.database().ref("User");
-//           dbef.on("Value", snap => {
-//     console.log(snap); // this key will output users
-//     console.log(snap.key); // this method will return full user
-// });
+          
           //add function 
           function check() {
             Name=document.getElementById("nameField").value;
             Place= document.getElementById ("ageField").value;
                
         if(Name=="Vasanth" && Place=="12345"){
-            const dbRef = firebase.database().ref("User");         
-            dbRef.get().then((snapshot) => {
-                snapshot.forEach(child => {
+            const dbRef = firebase.database().ref();
+            
+            dbRef.child("User").get().then((snapshot) => {
+              snapshot.forEach(child => {
                     
            
            if (snapshot.exists()) {
