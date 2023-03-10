@@ -167,11 +167,11 @@ a{
                 Phone1= document.getElementById("phone").value;
                 Detail1=document.getElementById("detail").value;
                 var d=new Date();
-                alert("succaler");
-                var dat=d.getFullYear()+"/"+d.getMonth()+"/"+d.getDate();
+               
+                var dat=d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
                 var date=d.getFullYear()+""+d.getMonth()+""+d.getDate()+""+d.getHours()+""+d.getMinutes();
         if(Name1!="" && Place1!="" && Email1!="" && Phone1!="" && Detail1!=""){
-          alert("succaler");
+       
           firebase.database().ref("User").child(date+"-"+Name1).set({
                 Name: document.getElementById("nameField").value,
                 Place: document.getElementById ("ageField").value,
@@ -180,7 +180,7 @@ a{
                 Detail: document.getElementById("detail").value,
                 Date: dat
                 });
-            alert("succaler");
+                alert("Order successfully placed\n We will contact you zoon!!");
            
           }
           else{

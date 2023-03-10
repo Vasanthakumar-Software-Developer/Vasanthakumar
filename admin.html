@@ -2,9 +2,12 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="./photos/profile.png">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <style src="styles.css">#form1{
+        <style src="styles.css">
+        
+        #form1{
             text-align: center;
             background-image: url("./photos/galaxy.jpg");
             width: 500px;
@@ -64,7 +67,8 @@
          
          #submit:hover{
               color: aliceblue;
-              background-color: black;
+            border: 2px solid white;
+              background-color: rgb(0, 0, 0);
          }
          .login
         {
@@ -156,6 +160,7 @@ a:hover{
 }
 #btn:hover{
     color:rgb(0, 0, 0);
+    border:2px solid black;
     background-color: rgb(255, 255, 255);
 }
          </style>
@@ -228,6 +233,7 @@ a:hover{
           
           //add function 
           function check() {
+            // document.write("<head><title>Andmin</title><style></style></head>")
             Name=document.getElementById("nameField").value;
             Place= document.getElementById ("ageField").value;
                
@@ -240,13 +246,14 @@ a:hover{
            
            if (snapshot.exists()) {
             
-            document.write("<center><div style='border:5px solid white; background-color:Skyblue; width:500px; text-align:center; border-radius:10px;'>");
+            document.write("<center><div style='border:5px solid black; background-color:Skyblue; width:500px; text-align:center; border-radius:10px;'>");
             document.write("User:"+child.key+"<br><br>")
             document.write("Name:"+snapshot.child(child.key).child("Name").val()+"<br>");
             document.write("Email:"+snapshot.child(child.key).child("Email").val()+"<br>");
             document.write("Place:"+snapshot.child(child.key).child("Place").val()+"<br>");
             document.write("Phone:"+snapshot.child(child.key).child("Phone").val()+"<br>");
             document.write("Detail:"+snapshot.child(child.key).child("Detail").val()+"<br>");
+            document.write("Date:"+snapshot.child(child.key).child("Date").val()+"<br>");
             document.write("</div><br><br></center>");
             document.body.style.backgroundImage="url('./photos/galaxy.jpg')";
            } else {
@@ -257,11 +264,11 @@ a:hover{
          console.error(error);
        });
        
-    document.write("<div class='bar' style='background-image:url(\"./photos/galaxy.jpg\"); text-align:center; width:100%; height:50px; border:2px solid white;  button{ border-radius: 5px; margin-top:14px; margin-left: 10px; color:rgb(255, 255, 255); background-color: black;}' ><a href='./index.html'><button>Home</button></a><a href='./project.html'><button>Projects</button></a><a href='./ord.html'><button>Order</button></a><a href='./admin.html'><button>Admin</button></a><a href='./contact.html'><button>Contacts</button></a></div><br><br>");
+       document.write("<div class='bar' style='background-image:url(\"./photos/galaxy.jpg\"); text-align:center; width:100%; height:50px; border:2px solid white;  button{ border-radius: 5px; margin-top:14px; margin-left: 10px; color:rgb(255, 255, 255); background-color: black;}' ><a href='./index.html'><button>Home</button></a><a href='./project.html'><button>Projects</button></a><a href='./ord.html'><button>Order</button></a><a href='./admin.html'><button>Admin</button></a><a href='./contact.html'><button>Contacts</button></a></div><br><br>");
 
-    //  document.write(' <div style=" background-color:black; text-align:center; height:50px; width:100%;"><a href="./index.html"><button>Home</button></a><a href="./project.html"><button>Projects</button></a><a href="./ord.html"><button>Order</button></a><a href="./admin.html"><button>Admin</button></a><a href="#home"><button>Contacts</button></a></div>');
-     document.write("<style> button{ background-color:black;  border-radius: 5px; margin-top:14px; margin-left: 10px;   color:rgb(255, 255, 255);  } button:hover{  color:rgb(0, 0, 0);  background-color: rgb(255, 255, 255); }</style>")    
-    }
+//  document.write(' <div style=" background-color:black; text-align:center; height:50px; width:100%;"><a href="./index.html"><button>Home</button></a><a href="./project.html"><button>Projects</button></a><a href="./ord.html"><button>Order</button></a><a href="./admin.html"><button>Admin</button></a><a href="#home"><button>Contacts</button></a></div>');
+ document.write("<style> button{ background-color:black;  border-radius: 5px; margin-top:14px; margin-left: 10px;   color:rgb(255, 255, 255);  } button:hover{  color:rgb(0, 0, 0);  background-color: rgb(255, 255, 255); }</style>")    
+}
     else{
         alert("Enter Valid Details");
     } 
