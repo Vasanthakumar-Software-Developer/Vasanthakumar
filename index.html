@@ -1,0 +1,289 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vasanthakumar A</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="./photos/profile.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+          /* #loader{
+            margin-top: 10%;
+            display: flex;
+          justify-content: center;
+        }
+        .n{
+            width: 20px;
+            height: 140px;
+            background-color: #FFD700;
+            margin-top: 45px;
+            transform:rotate(-25deg);
+            border-radius:0px 50% 50% 50%;
+            animation: mov1 2s infinite;
+        }
+        .n1{
+            width: 20px;
+            margin-left: 40px;
+            height: 140px;
+            border-radius: 0px 50% 50% 50%;
+            background-color: #FFD700;
+            margin-top: 45px;
+            transform:rotate(25deg);
+            animation:mov2 2s infinite;
+        }
+        .r{
+            margin-top: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
+            position:absolute;
+            background-color: black;
+        }
+        .r1{
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            border: 20px solid white;
+            position:absolute;
+            background-color: black;
+            animation:mov 2s infinite;
+        }
+        @keyframes mov {
+            0%{transform: rotate(0deg);}
+            
+            100%{transform: rotate(360deg);}
+        }
+        @keyframes mov1 {
+            0%{transform: rotate(-25deg);}
+            
+            100%{transform: rotate(-385deg);}
+        }
+        @keyframes mov2{
+            0%{transform:rotate(25deg);}
+            
+            100%{transform:rotate(385deg);}
+        } */
+        #vid{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+        .bod{
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+        .bar a.icon{
+            display: none;
+        }
+        
+        @media screen and (max-width:600px) {
+            .bar a.icon{
+                position: absolute;
+                padding: 15px;
+                 float: right;
+                 display: block;
+                 color: white;
+            }
+            
+        }
+        @media screen and (max-width:600px){
+            .bar a{
+                display: none;
+            }
+            .bar a.icon{
+                position: absolute;
+                 padding: 15px;
+                 float: right;
+                 display: block;
+                 color: white;
+                
+            }
+            .bar{
+                height: 50px;
+                position: relative;
+            }
+            .bar.r{
+                right: 0;
+            }
+            .bar.r a{
+                
+                display: block;
+               margin-left: 300px;
+            }
+            .bar.r button{
+                left: 0;
+                width: 100px;
+                height: 30px;
+               
+            }
+            
+        }
+    </style>
+        </head>
+
+     <body>
+        <script>
+            function func(){
+                var a=document.getElementById("nav");
+                if(a.className==="bar"){
+                    a.className+=" r"
+                }
+                else{
+                    a.className="bar"
+                }
+            }
+        </script>
+      <video autoplay muted loop id="vid">
+        <source src="./photos/network-45961.mp4" type="video/mp4">
+      </video>
+      <div class="bod">
+      <!-- <div id="loader">
+        <div class="r"><div class="r1">
+        <div class="n"></div>
+        <div class="n1"></div></div></div>
+    </div> -->
+       <div class="bar" id="nav">
+          <a href="./index.html"><button>Home</button></a>
+          <a href="./project.html"><button>Projects</button></a>
+          <a href="./ord.html"><button>Order</button></a>
+          <a href="./admin.html"><button>Admin</button></a>
+            <a href="./contact.html"><button>Contacts</button></a>
+            <a class="icon" onclick="func()" ><i class="fa fa-bars"></i></a>
+       </div>
+       <div class="pm">
+           <div class="box2">
+      <h1 style="font-family: 'Creepster', cursive;
+     font-family: 'Crete Round', serif;">Hi There,<br>I'm Vasanthakumar<br>I'm Software Developer</h1>
+      </div>
+        <div>
+          <img class="pro" src="./photos/profile.png" width="250" height="250">
+        </div>
+        </div>
+        <br><br><br><br><br><br>
+      
+           
+        
+          
+      
+        
+        
+        <div class="Education" id="du" style="background-color: rgb(20, 46, 38); color: white;">
+            <br>
+            <pre><h1>                Education</h1><h2 class="h1font">
+                B.E  COMPUTER SCIENCE AND ENGINEERING                         Coimbatore, India
+                KIT-KALAIGNARKARUNANIDHI INSTITUTE OF TECHNOLOGY              2020 – 2024
+                CGPA-9                                                     
+                </h2><h2 class="h1font">
+                HSC, IDEAL MATRIC HR SEC SCHOOL                               Aranthangi, India   
+                Percentage- 84.50%                                            2019 – 2020
+            </h2></h2><h2 class="h1font">
+                SSLC, GOVERNMENT HIGH SCHHOL                                  Aranthangi, India
+                Percentage-86.40%                                             2017 – 2018
+        </h2>
+        </pre>
+            <br><br>
+           
+          </div>
+         
+          <div class="Education" style="height: 1080px; background-color: rgb(20, 46, 38); color: white;"><br>
+            <pre><h1 >               Technical Skills</h1><h2 class="h1font">
+                Programming Launguages:
+                <div class="th">
+                <div style="background-image: url('./photos/Java.png'); margin-left: 200px; border: 2px solid black;" class="prog"> 
+            
+                   
+                  </div>
+                  <div style="background-image: url('./photos/Kotlin.png'); border: 2px solid black;" class="prog"> 
+            
+                   
+                  </div>
+                  <div style="background-image: url('./photos/C.png'); border: 2px solid black;" class="prog"> 
+                  </div>
+                  <div style="background-image: url('./photos/C++.png'); border: 2px solid black;" class="prog"> 
+            
+                   
+                  </div>
+                  <div style="background-image: url('./photos/Python.png'); border: 2px solid black;" class="prog"> 
+                  </div>
+                </div></h2><h2 class="h1font">
+                Android App Developement Tool:</h2><div class="th">
+                 <div style="background-image: url('./photos/Android.png'); margin-left: 200px; border: 2px solid black; " class="prog"> 
+                </div>
+                <div style="background-image: url('./photos/Xml.jpg'); border: 2px solid black;" class="prog"> 
+                </div></div><h2 class="h1font">
+                web App Developement Tool:</h2><div class="th"><div style="border: 2px solid black; background-image: url('./photos/HTML.png'); margin-left: 200px;" class="prog"> 
+                    </div>
+                    <div style="background-image: url('./photos/CSS.png'); border: 2px solid black; " class="prog"> 
+                    </div>
+                    <div style="background-image: url('./photos/Js.png'); border: 2px solid black;" class="prog"> 
+                    </div>
+                    <div style="background-image: url('./photos/Php.png'); border: 2px solid black;" class="prog"> 
+                    </div></div><h2 class="h1font"> 
+                database Tool: Firebase</h2><div class="th"><div style="border: 2px solid black; background-image: url('./photos/Firebase.png'); margin-left: 200px;" class="prog"> 
+                        </div></div><h2 class="h1font">
+                web Design Tool:Figma</h2> <div class="th"><div style="border: 2px solid black; background-image: url('./photos/Figma.png'); margin-left: 200px;" class="prog"> 
+                        </div>
+                        </div>
+                        
+                         
+        </pre>
+          </div>
+          <br><br><br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="containe" style="background-color: rgb(20, 46, 38); color: white;"><h1>Internship</h1>
+            <div >
+                <img id="sl1" src="./photos/Screenshot (123).png">
+               
+            </div>
+        </div>
+       
+        <div class="container" style="background-color: rgb(20, 46, 38); color: white;"><h1>Certification</h1>
+          <div class="wrapper">
+              <img id="sl" src="./photos/re.png">
+              <img id="sl" src="./photos/javac.jpg">
+              
+          </div>
+      </div>
+      
+         
+             
+<div class="footer"><center>
+    Vasanthakumar<br>
+    Software Developer
+    </center>
+    
+</div> 
+<!-- <script>
+  document.onreadystatechange = function() {
+      if (document.readyState !== "complete") {
+          document.querySelector(
+          "body").style.visibility = "hidden";
+          document.querySelector(
+          "#loader").style.visibility = "visible";
+      } else {
+          document.querySelector(
+          "#loader").style.display = "none";
+          document.querySelector(
+          "body").style.visibility = "visible";
+      }
+  };
+</script> -->
+</div>
+    </body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="./photos/profile.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <style src="styles.css">
+        
+        #form1{
+            text-align: center;
+            background-image: url("./photos/galaxy.jpg");
+            width: 500px;
+            border-radius: 5%;
+        
+          }
+          #form1:hover{
+        
+        border-radius: 5%;
+          
+      } 
+          input{
+            
+            color: whitesmoke;
+            outline: none;
+            background-image: url("./photos/galaxy1.jpg");
+            border: none;
+            width: 350px;
+            height: 40px;
+            border-bottom: 1px solid rgb(155, 149, 149);
+        
+          }
+          ::placeholder{
+            color: rgb(202, 204, 206);
+          }
+          input:hover{
+            
+            color: rgb(255, 255, 255);
+        
+            border-bottom: 1px solid rgb(255, 255, 255);
+            outline: none;
+          }
+       
+          textarea{
+            background-image: url("./photos/galaxy1.jpg");
+            width: 350px;
+            height: 200px;
+          }
+         #submit{
+            width: 350px;
+          height: 40px;
+          background-color: aliceblue;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          border-radius: 50px;
+        
+         }
+         
+         #hd{
+            color: aliceblue;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         }
+         
+         #submit:hover{
+              color: aliceblue;
+            border: 2px solid white;
+              background-color: rgb(0, 0, 0);
+         }
+         .login
+        { text-align: center;
+          margin-left: 10%;
+          margin-top: 5%;
+          width: 500px;
+          height: 400px;
+          border-radius: 8px;
+         border: 1px solid white;
+          background-image: url("./photos/galaxy.jpg");
+          
+        }
+        .login:hover{
+          border: 3px solid rgb(226, 225, 225);
+          border-style:double;
+        }
+        .bar{
+   background-image: url("./photos/galaxy.jpg");
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+  text-align: center;
+  
+  border: 2px solid rgb(255, 255, 255);
+
+}   
+#btn{
+    border-radius: 5px;
+    margin-top:14px;
+    margin-left: 10px;
+       color:rgb(255, 255, 255);
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+   
+     color:rgb(255, 255, 255);
+}
+footer{
+   
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  color: #f3efef;
+  background-color: #141414;
+  text-align: center;
+}
+
+img{
+    float: right;
+    text-align: right;
+    border-radius: 200px;
+    margin-top: 100px;
+    margin-right: 40%;
+    margin-left: 1600px;
+    border: 2px solid black;
+  
+  
+}
+@media screen and (max-width:559px){
+    
+}
+a:hover{
+     color: black;
+}
+@media screen and (max-width:455px){
+
+ 
+  
+   
+}
+
+@media screen and (max-width:244px){
+
+   .bar{
+       height: 130px;
+   }
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    text-align: center;
+
+
+}
+.cont{
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+#vid{
+  min-height: 100%;
+  min-height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#btn:hover{
+    color:rgb(0, 0, 0);
+    border:2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+         </style>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin</title>
+
+    
+    </head>
+    <body oncontextmenu="return false;">
+      <video autoplay loop muted id="vid">
+        <source src="photos/World - 1992_Trim_Trim.mp4" type="video/mp4" >sorry!
+    </video>
+      <div class="cont">
+      <div class="bar">
+        <a href="./index.html"><button id="btn">Home</button></a>
+        <a href="./project.html"><button id="btn">Projects</button></a>
+        <a href="./ord.html"><button id="btn">Order</button></a>
+        <a href="./admin.html"><button id="btn">Admin</button></a>
+          <a href="./contact.html"><button id="btn">Contacts</button></a>
+                     
+     </div>
+          
+              <br><br>
+<div class="login">
+  <br><br>
+              <h1 id="hd">Admin Login</h1><br><br>
+             <input type="text" placeholder="   User Name" class="in" id="nameField" required><br><br>
+              <input type="password" placeholder="   Password" class="in" id="ageField" required><br><br>
+               
+              <button id="submit" onclick = "check()" type="button"> Submit </button><br><br>
+</div>
+         
+    
+     
+        <script src="function.js"></script>
+        <script>
+          /*function check(e)
+          {
+          alert(e.keyCode);
+          }*/
+          document.onkeydown = function(e) {
+                  if (e.ctrlKey || event.keyCode == 123 ) {
+                      return false;
+                      
+                      
+                  }
+                  else{
+                  return true;
+                  }
+          };
+        </script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+     
+        <script>
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          var firebaseConfig = {
+             apiKey: "AIzaSyARU5d-pa3HczZyMjf9EFRnjYiliPjI83s",
+        authDomain: "health-care-50d70.firebaseapp.com",
+        databaseURL: "https://health-care-50d70-default-rtdb.firebaseio.com",
+        projectId: "health-care-50d70",
+        storageBucket: "health-care-50d70.appspot.com",
+        messagingSenderId: "929719561432",
+        appId: "1:929719561432:web:40f7149aeb83efebd47bad",
+        measurementId: "G-EJE5PCV6RL" 
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          
+          //add function 
+          function check() {
+            // document.write("<head><title>Andmin</title><style></style></head>")
+            Name=document.getElementById("nameField").value;
+            Place= document.getElementById ("ageField").value;
+               
+        if(Name=="Vasanth" && Place=="12345"){
+            const dbRef = firebase.database().ref();
+            
+            dbRef.child("User").get().then((snapshot) => {
+              snapshot.forEach(child => {
+                    
+           
+           if (snapshot.exists()) {
+            
+            document.write("<center><div style='border:5px solid black; background-color:white; width:500px; text-align:center; border-radius:10px;'>");
+            document.write("User:"+child.key+"<br><br>")
+            document.write("Name:"+snapshot.child(child.key).child("Name").val()+"<br>");
+            document.write("Email:"+snapshot.child(child.key).child("Email").val()+"<br>");
+            document.write("Place:"+snapshot.child(child.key).child("Place").val()+"<br>");
+            document.write("Phone:"+snapshot.child(child.key).child("Phone").val()+"<br>");
+            document.write("Detail:"+snapshot.child(child.key).child("Detail").val()+"<br>");
+            document.write("Date:"+snapshot.child(child.key).child("Date").val()+"<br>");
+            document.write("</div><br><br></center>");
+            document.body.style.backgroundImage="url('./photos/galaxy.jpg')";
+           } else {
+        console.log("No data available");
+        }
+    });
+        }).catch((error) => {
+         console.error(error);
+       });
+       
+       document.write("<div class='bar' style='background-image:url(\"./photos/galaxy.jpg\"); text-align:center; width:100%; height:50px; border:2px solid white;  button{ border-radius: 5px; margin-top:14px; margin-left: 10px; color:rgb(255, 255, 255); background-color: black;}' ><a href='./index.html'><button>Home</button></a><a href='./project.html'><button>Projects</button></a><a href='./ord.html'><button>Order</button></a><a href='./admin.html'><button>Admin</button></a><a href='./contact.html'><button>Contacts</button></a></div><br><br>");
+
+//  document.write(' <div style=" background-color:black; text-align:center; height:50px; width:100%;"><a href="./index.html"><button>Home</button></a><a href="./project.html"><button>Projects</button></a><a href="./ord.html"><button>Order</button></a><a href="./admin.html"><button>Admin</button></a><a href="#home"><button>Contacts</button></a></div>');
+ document.write("<style> button{ background-color:black;  border-radius: 5px; margin-top:14px; margin-left: 10px;   color:rgb(255, 255, 255);  } button:hover{  color:rgb(0, 0, 0);  background-color: rgb(255, 255, 255); }</style>")    
+}
+    else{
+        alert("Enter Valid Details");
+    } 
+          }
+            
+          
+        </script>
+    <div class="footer"><center>
+      Vasanthakumar<br>
+      Software Developer
+      </center>
+      
+  </div> </div>
+    </body>
+    </html>
